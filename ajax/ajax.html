@@ -6,26 +6,7 @@
 </head>
 
 <body>
-    <script>
-        url = "https://open.neis.go.kr/hub/mealServiceDietInfo?callback=jQuery331005737853503659074_1633351969554&KEY=a392868da79e455189e5813ed97b5b8e&Type=json&pIndex=1&pSize=1000&ATPT_OFCDC_SC_CODE=C10&SD_SCHUL_CODE=7150658&MMEAL_SC_CODE=2&MLSV_FROM_YMD=20210926&MLSV_TO_YMD=20211106&_=1633351969555"
-
-        $(function () {
-            $.ajax({
-
-                type: 'get',
-                url: url,
-                dataType: 'text',
-                success: function (data) {
-                    console.log(data);
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.log(jqXHR, textStatus, errorThrown);
-                },
-            });
-        });
-
-    </script>
+    <script src="ajax1.js"></script>
 </body>
-
 
 </html>
