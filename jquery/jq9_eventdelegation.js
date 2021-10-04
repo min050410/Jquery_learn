@@ -1,6 +1,6 @@
 // event delegation
 
-// 1 
+// 1 - preventDefault
 
 $(function() {
     $("ul a").on("click", function(event){  // ul 밑에 a  선택
@@ -19,5 +19,6 @@ $(function() {
             $("#text").append("이링크는 동작하지 않습니다")
     })  
 })
+
 // 이 방법은 나중에 추가되는 자손 요소까지 모두 자동으로 연결
 

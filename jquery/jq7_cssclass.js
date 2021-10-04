@@ -3,6 +3,8 @@ $(document).ready(function () {
     css1();
     css2();
 })
+
+//addClass 메소드
 function css1() {
     $(".btn").on("click", function () {
         $("#first, #third").addClass("lined")
@@ -10,6 +12,7 @@ function css1() {
     })
 }
 
+//remove class 메소드
 function css2() {
     $(".btn3").on("click", function () {
         $("#first, #third").removeClass("lined")

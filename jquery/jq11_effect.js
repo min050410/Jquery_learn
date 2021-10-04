@@ -1,4 +1,4 @@
-// 1
+// 1 - show 메소드
 
 $(function () {
     $("showBtn").on("click", function () {
@@ -18,7 +18,7 @@ hide("fast")  // 빠르게 숨김
 
 toggle("slow") //숨기고 나타나는것 토글
 
-// 2
+// 2 -  fadein 메소드
 
 $(function () {
     $("fadeBtn").on("click", function () {
@@ -28,7 +28,7 @@ $(function () {
 //fadeOut(천천히 사라지게 함)
 //, fadeToggle이 존재
 
-// 3
+// 3 - slide 메소드
 
 $(function () {
     $("#side").slideUp(); //서서히 올라오면서 사라지는 효과
@@ -36,7 +36,7 @@ $(function () {
     $("#side").slideToggle(); //없으면 나타나고 있으면 사라지는 효과
 })
 
-// 4
+// 4 - 제어 메소드
 $(function () {
     $("#side").slideUp().delay(500); //0.5초동안 딜레이
     $("#side").slideDown().stop(); //이벤트 멈춰!!!
