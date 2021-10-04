@@ -2,13 +2,13 @@
 
 // ex )
 
-$(function () {
+$(function () {  // function 을 제일 앞에 이렇게 쓰면 걍 실행
     $("button").on("mouseenter mouseleave", function () {
         $("#text").append("마우스가 버튼위로 진입하거나 빠져나갔어요!")
     })
 })
 
-$(function(){
+$(function(){  
     $("button").on({
         mouseenter: function(){
             $("#text").append("마우스가 버튼위로 진입했어여");

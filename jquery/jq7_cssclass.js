@@ -5,10 +5,11 @@ $(document).ready(function () {
 })
 function css1() {
     $(".btn").on("click", function () {
-        // $("#first, #third").addClass("lined")
-        $("#append").find("li").toggleClass("lined")
+        $("#first, #third").addClass("lined")
+        // $("#append").find("li").toggleClass("lined")  //토글한건 remove 안됨 
     })
 }
+
 function css2() {
     $(".btn3").on("click", function () {
         $("#first, #third").removeClass("lined")
