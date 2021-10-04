@@ -4,4 +4,7 @@ h1 {
     color:blueviolet;
     
   }
-  
+.lined{
+  text-decoration: line-through;
+  color: lightgray;
+}
