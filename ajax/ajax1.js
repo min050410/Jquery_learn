@@ -6,6 +6,7 @@ $(function () {
         type: 'get',
         url: url,
         dataType: 'text',
+        // headers: { 'name': 'value' },
         success: function (data) {
             var database = data
             // console.log("파싱이 완료")
@@ -13,7 +14,8 @@ $(function () {
             database = database.slice(42, database.length - 2)
             // console.log(database);
             var parse = JSON.parse(database)
-            console.log(parse["mealServiceDietInfo"][1]["row"][0]["DDISH_NM"]);
+            // console.log(parse["mealServiceDietInfo"][1]["row"][0]["DDISH_NM"]);
+            inner(parse["mealServiceDietInfo"][1]["row"][1]["DDISH_NM"]);
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log(jqXHR, textStatus, errorThrown);
@@ -21,3 +23,8 @@ $(function () {
     });
 });
 
+function inner(food) {
+    $(".submit").on("click", function () {
+        $(".food").html(food);
+    })
+}
