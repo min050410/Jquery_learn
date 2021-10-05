@@ -7,9 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fourtune</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        .con {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40;
+        }
+
+        div#f3 {
+            width: 600px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="con">
+        <h1>네 이 버 운 세</h1>
+        <form id="form">
+            <label>ex) 20050410</label>
+            <input type="text">
+            <button type="submit" class="submit">submit!</button>
+        </form>
+
+        <h3 id="f1"></h3>
+        <div id="f2"></div>
+        <div id="f3"></div>
+    </div>
+
+
     <script src="fourtune.js"></script>
 </body>
 
