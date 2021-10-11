@@ -1,4 +1,4 @@
-# js_learn master br
+# js_learn master branch summery
 
 ### js jquery ajax 등을 공부  
 ![jquery](https://user-images.githubusercontent.com/45661217/136007298-5af8ae43-dcf0-4866-b8f4-1ea2da119f98.PNG)  
